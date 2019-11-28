@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="dialog_common_theme_bottom" parent="dialog_common_theme">
+        <item name="android:windowAnimationStyle">@style/BottomDialogLand</item>
+    </style>
+
+    <!--通用dialog 背景透明主题-->
+    <style name="dialog_common_theme" parent="@android:style/Theme.Dialog">
+        <item name="android:colorBackgroundCacheHint">@null</item><!-- 无背景缓存颜色 -->
+        <item name="android:windowFrame">@null</item><!-- 无边框 -->
+        <item name="android:windowNoTitle">true</item><!-- 无标题 -->
+        <item name="android:windowIsTranslucent">true</item><!--是否透明-->
+        <item name="android:background">@android:color/transparent</item><!--背景透明-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--window背景透明-->
+    </style>
+
+    <style name="BottomDialogLand" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_bottom_up</item>
+        <item name="android:windowExitAnimation">@anim/dialog_bottom_down</item>
+    </style>
+
+</resources>

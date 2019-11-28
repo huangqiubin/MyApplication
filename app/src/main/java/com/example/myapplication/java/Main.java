@@ -10,6 +10,7 @@ public class Main {
         ArrayList list = new ArrayList();
         list.add(new Integer(123));
         String first = list.get(0).toString();
+        System.out.println("Hello world.");
     }
 }
 

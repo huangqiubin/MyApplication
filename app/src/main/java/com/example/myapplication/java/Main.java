@@ -14,6 +14,7 @@ public class Main {
         System.out.println("开发完了，把该分支合到主分支");
 
         System.out.println("Hello world.");
+        System.out.println("修改commmit信息");
     }
 }
 

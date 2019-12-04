@@ -1,20 +1,22 @@
 package com.example.myapplication.java;
 
-import com.example.myapplication.kotlin.KotlinfileKt;
-
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args){
-        ArrayList list = new ArrayList();
-        list.add(new Integer(123));
-        String first = list.get(0).toString();
-        System.out.println("这是我在dev1新增的修改！");
-        System.out.println("开发完了，把该分支合到主分支");
+        Person person = new Student(1,"12");
+        List<Student> students = new ArrayList<>();
+        students.add(new Student(2,"23"));
+        students.add(new Student(3,"32"));
+        students.add(new Student(4,"56"));
+        List<? extends Person> list = students;
+        System.out.println(((Student)list.get(1)).score);
+        List<? super Student> list1 = new ArrayList<>();
+        list1.add(new Student(1,"2"));
 
-        System.out.println("Hello world.");
-        System.out.println("修改commmit信息");
     }
+
 }
 

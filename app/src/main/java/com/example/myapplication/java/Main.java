@@ -1,9 +1,5 @@
 package com.example.myapplication.java;
 
-import android.text.TextUtils;
-
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -24,6 +20,15 @@ public class Main {
 //        list1.add(new Student(1,"2"));
 
 
+        Person person1 = new Student(1,"12");
+        List<Student> student1 = new ArrayList<>();
+        students.add(new Student(2,"23"));
+        students.add(new Student(3,"32"));
+        students.add(new Student(4,"56"));
+        List<? extends Person> list11 = students;
+        System.out.println(((Student)list.get(1)).score);
+        List<? super Student> list111 = new ArrayList<>();
+        list111.add(new Student(1,"2"));
 //        List<Integer> list = new ArrayList<>();
 //        list.add(1);
 //        list.add(1);

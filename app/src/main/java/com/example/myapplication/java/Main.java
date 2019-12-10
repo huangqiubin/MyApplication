@@ -16,6 +16,15 @@ public class Main {
         List<? super Student> list1 = new ArrayList<>();
         list1.add(new Student(1,"2"));
 
+        Person person1 = new Student(1,"12");
+        List<Student> student1 = new ArrayList<>();
+        students.add(new Student(2,"23"));
+        students.add(new Student(3,"32"));
+        students.add(new Student(4,"56"));
+        List<? extends Person> list11 = students;
+        System.out.println(((Student)list.get(1)).score);
+        List<? super Student> list111 = new ArrayList<>();
+        list111.add(new Student(1,"2"));
     }
 
 }
